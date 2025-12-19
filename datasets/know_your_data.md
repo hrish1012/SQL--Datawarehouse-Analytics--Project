@@ -1,17 +1,21 @@
-📌 Overview
+## 📌 Overview
 
-This folder contains raw source data files used to load the Bronze layer of the data warehouse.
-The data originates from two independent source systems:
-    1.CRM (Customer Relationship Management)
-    2.ERP (Enterprise Resource Planning)
+This folder contains **raw source data files** used to load the **Bronze layer** of the data warehouse.
 
-These datasets represent unprocessed data and are ingested into corresponding Bronze tables before any cleansing or transformation.
+The data originates from **two independent source systems**:
 
-🔹 CRM Source System Datasets
-=
+1. **CRM** (Customer Relationship Management)
+2. **ERP** (Enterprise Resource Planning)
 
-1️⃣ Customer Information
-Target Table: bronze.crm_cust_info
+These datasets represent **unprocessed source data** and are ingested into corresponding **Bronze tables** before any cleansing or transformation.
+
+---
+
+## 🔹 CRM Source System Datasets
+
+### 1️⃣ Customer Information  
+**Target Table:** `bronze.crm_cust_info`
+
 | Column             | Description                   |
 | ------------------ | ----------------------------- |
 | cst_id             | Unique customer identifier    |
@@ -22,22 +26,26 @@ Target Table: bronze.crm_cust_info
 | cst_gndr           | Gender                        |
 | cst_create_date    | Customer record creation date |
 
+---
 
-2️⃣ Product Information
-Target Table: bronze.crm_prd_info
+### 2️⃣ Product Information  
+**Target Table:** `bronze.crm_prd_info`
+
 | Column       | Description                  |
 | ------------ | ---------------------------- |
 | prd_id       | Unique product identifier    |
 | prd_key      | Business product key         |
 | prd_nm       | Product name                 |
 | prd_cost     | Product cost                 |
-| prd_line     | Product line/category        |
+| prd_line     | Product line / category      |
 | prd_start_dt | Product effective start date |
 | prd_end_dt   | Product effective end date   |
 
+---
 
-3️⃣ Sales Transactions
-Target Table: bronze.crm_sales_details
+### 3️⃣ Sales Transactions  
+**Target Table:** `bronze.crm_sales_details`
+
 | Column       | Description                    |
 | ------------ | ------------------------------ |
 | sls_ord_num  | Sales order number             |
@@ -50,34 +58,39 @@ Target Table: bronze.crm_sales_details
 | sls_quantity | Quantity sold                  |
 | sls_price    | Unit price                     |
 
-⚠ Dates are stored as integers and are standardized in later layers.
+> ⚠ **Note:** Dates are stored as integers and are standardized in later layers.
 
+---
 
-🔹 ERP Source System Datasets
+## 🔹 ERP Source System Datasets
 
-4️⃣ Customer Demographics
-Target Table: bronze.erp_cust_az12
-| Column| Description         |
+### 4️⃣ Customer Demographics  
+**Target Table:** `bronze.erp_cust_az12`
+
+| Column | Description         |
 | ----- | ------------------- |
 | cid   | Customer identifier |
 | bdate | Birth date          |
 | gen   | Gender              |
 
+---
 
-5️⃣ Customer Location
-Target Table: bronze.erp_loc_a101
-| Column| Description         |
+### 5️⃣ Customer Location  
+**Target Table:** `bronze.erp_loc_a101`
+
+| Column | Description         |
 | ----- | ------------------- |
 | cid   | Customer identifier |
 | cntry | Country             |
 
+---
 
-6️⃣ Product Category Mapping
-Target Table: bronze.erp_px_cat_g1v2
+### 6️⃣ Product Category Mapping  
+**Target Table:** `bronze.erp_px_cat_g1v2`
+
 | Column      | Description           |
 | ----------- | --------------------- |
 | id          | Product identifier    |
 | cat         | Category              |
 | subcat      | Sub-category          |
 | maintenance | Maintenance indicator |
-
