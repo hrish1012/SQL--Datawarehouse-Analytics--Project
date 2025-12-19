@@ -39,5 +39,8 @@ Each SQL script focuses on a specific analytical theme and follows SQL best prac
 - Data Analytics
 
 ---
+## 🤝Stay Connected!
+-Let's stay in touch! Do let me know your suggestions and thoughts on my work.
+-Feel free to connect with me at hrishita.barkhade@gmail.com
 
 
