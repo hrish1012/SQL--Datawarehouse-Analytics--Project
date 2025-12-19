@@ -8,6 +8,7 @@ The data originates from two independent source systems:
 These datasets represent unprocessed data and are ingested into corresponding Bronze tables before any cleansing or transformation.
 
 🔹 CRM Source System Datasets
+=
 
 1️⃣ Customer Information
 Target Table: bronze.crm_cust_info
