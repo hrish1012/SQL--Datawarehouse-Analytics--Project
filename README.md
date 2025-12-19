@@ -11,13 +11,13 @@ The solution follows the **Bronze–Silver–Gold (Medallion) architecture** to 
 
 ---
 
-## Architecture
+## 🏗️Data Warehouse Architecture
 - **Bronze Layer**: Raw data ingested from CRM and ERP sources
 - **Silver Layer**: Cleaned, standardized, and transformed data
 - **Gold Layer**: Business-level aggregated tables for analytics and reporting
 
 ---
-## Data Analytics
+## 📊Data Analytics
 The project includes a comprehensive collection of **SQL scripts** for data exploration, analytics, and reporting.  
 These scripts are designed to help analysts and BI professionals efficiently analyze relational data.
 
@@ -32,7 +32,7 @@ These scripts are designed to help analysts and BI professionals efficiently ana
 Each SQL script focuses on a specific analytical theme and follows SQL best practices.
 
 ---
-## Technologies
+## 🛠️Technologies
 - SQL
 - Relational Data Warehouse
 - Data Warehousing Concepts
