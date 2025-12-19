@@ -2,8 +2,7 @@
 This project demonstrates practical skills in **data warehousing design**, **SQL-based analytics**, and **insight generation** from enterprise data sources.
 
 ---
-📌
-## Overview
+## 📌Overview
 This project implements an end-to-end **data warehousing and analytics solution** using two source systems:
 - **CRM (Customer Relationship Management)**
 - **ERP (Enterprise Resource Planning)**
