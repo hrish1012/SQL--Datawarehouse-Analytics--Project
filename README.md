@@ -39,6 +39,42 @@ Each SQL script focuses on a specific analytical theme and follows SQL best prac
 - Data Analytics
 
 ---
+## 📂 Repository Structure
+```
+SQL--Datawarehouse-Analytics--Project/
+│
+├── datasets/                           # Raw source datasets (CRM and ERP data)
+│
+├── data_analytics/                     # SQL-based data analytics and reporting
+│   ├── scripts/                        # Analytics SQL scripts (exploration, trends, segmentation, reports)
+│   └── know_the_analytics.md           # Overview of analytics approach and insights
+│
+├── data_warehouse/                     # Data warehouse implementation (Medallion Architecture)
+│   ├── docs/                           # Architecture, data flow, and integration diagrams
+│   ├── scripts/                        # SQL scripts for Bronze, Silver, and Gold layers
+│   ├── tests/                          # Data quality and validation SQL checks
+│   └── know_the_data_warehouse.md      # Explanation of warehouse design and layers
+│
+└── README.md                           # Main repository documentation
+```
+---
+data-engineering-analytics-project/
+│
+├── datasets/                           # Raw source datasets (CRM and ERP data)
+│
+├── data_analytics/                     # SQL-based data analytics and reporting
+│   ├── scripts/                        # Analytics SQL scripts (exploration, trends, segmentation, reports)
+│   └── know_the_analytics.md           # Overview of analytics approach and insights
+│
+├── data_warehouse/                     # Data warehouse implementation (Medallion Architecture)
+│   ├── docs/                           # Architecture, data flow, and integration diagrams
+│   ├── scripts/                        # SQL scripts for Bronze, Silver, and Gold layers
+│   ├── tests/                          # Data quality and validation SQL checks
+│   └── know_the_data_warehouse.md      # Explanation of warehouse design and layers
+│
+└── README.md                           # Main repository documentation
+
+---
 ## 🤝Stay Connected!
 - Let's stay in touch! Do let me know your suggestions and thoughts on my work.
 - Feel free to connect with me at hrishita.barkhade@gmail.com
