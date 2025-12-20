@@ -43,8 +43,6 @@ Each SQL script focuses on a specific analytical theme and follows SQL best prac
 ```
 SQL--Datawarehouse-Analytics--Project/
 │
-├── datasets/                           # Raw source datasets (CRM and ERP data)
-│
 ├── data_analytics/                     # SQL-based data analytics and reporting
 │   ├── scripts/                        # Analytics SQL scripts (exploration, trends, segmentation, reports)
 │   └── know_the_analytics.md           # Overview of analytics approach and insights
@@ -54,6 +52,8 @@ SQL--Datawarehouse-Analytics--Project/
 │   ├── scripts/                        # SQL scripts for Bronze, Silver, and Gold layers
 │   ├── tests/                          # Data quality and validation SQL checks
 │   └── know_the_data_warehouse.md      # Explanation of warehouse design and layers
+│
+├── datasets/                           # Raw source datasets (CRM and ERP data)
 │
 └── README.md                           # Main repository documentation
 ```
