@@ -49,11 +49,18 @@ SQL--Datawarehouse-Analytics--Project/
 │
 ├── data_warehouse/                     # Data warehouse implementation (Medallion Architecture)
 │   ├── docs/                           # Architecture, data flow, and integration diagrams
-│   ├── scripts/                        # SQL scripts for Bronze, Silver, and Gold layers
+│   ├── scripts/                        # SQL scripts for all the layers of data warehouse
+│       ├── bronze/                     # SQL script for Bronze layer
+│       ├── gold/                       # SQL script for Gold layer
+│       ├── silver/                     # SQL script for Silver layer
+│       ├── init_database.sql           # SQL scripts for Bronze, Silver, and Gold layers
 │   ├── tests/                          # Data quality and validation SQL checks
-│   └── know_the_data_warehouse.md      # Explanation of warehouse design and layers
+│   └── know_the_data_warehouse.md      # Database and schema creation for data_warehouse
 │
 ├── datasets/                           # Raw source datasets (CRM and ERP data)
+│   ├── source_crp/                     # Data files from the first source CRM - Customer Relationship Management
+│   ├── source_erp/                     # Data files from the second source ERP - Enterprise Resource Planning
+│   └── know_your_data.md               # Explanation of the source data
 │
 └── README.md                           # Main repository documentation
 ```
